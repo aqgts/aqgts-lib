@@ -1,4 +1,10 @@
-import NullTextArea from "./null-text-area";
+class NullTextArea {
+  constructor(value = "") {
+    this.value = value;
+    this.scrollTop = 0;
+    this.scrollHeight = 0;
+  }
+}
 
 export default class TextAreaWrapper {
   constructor(textArea = new NullTextArea()) {
